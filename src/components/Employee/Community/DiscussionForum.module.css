@@ -1,0 +1,221 @@
+/* DiscussionForum.module.css */
+
+.forumSection {
+    width: 100%;
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .forumSection h2 {
+    font-size: 2rem;
+    color: #9560b4; /* Adjust color to fit your design */
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing for emphasis */
+  }
+  .forumList {
+ 
+    display: flex;
+    overflow-x: auto; /* Enable horizontal scrolling */
+    scrollbar-width: none; /* Hide scrollbar in Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+  }
+  
+  .forumList::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Webkit browsers */
+  }
+  
+  .forumCard {
+    flex: 0 0 auto; /* Prevent card from shrinking */
+    width: 350px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 20px;
+  }
+  
+  .forumCard img {
+    width: 100%;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .forumCard {
+    flex: 0 0 auto; /* Prevent card from shrinking */
+    width: 300px;
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+    padding: 20px;
+    transition: transform 0.2s ease;
+  }
+  
+  .forumCard:hover {
+    transform: translateY(-5px); /* Add subtle hover effect */
+  }
+  
+  .forumCard h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+    color: #333; /* Adjust color to fit your design */
+  }
+  
+  .forumCard p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #666; /* Adjust color to fit your design */
+  }
+  
+  .forumCard button {
+    background: linear-gradient(135deg, #8172E8, #B69FEB);
+    width: 100%;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    font-size: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    margin-right: 5px; /* Adjust spacing between buttons */
+   
+  }
+  
+  .forumCard button:hover {
+    transform: translateY(-2px); /* Add subtle hover effect */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Add subtle hover effect */
+  }
+  .overlay {
+    margin-top: 40px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .formContainer {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+    height: 450px;
+    overflow-y: auto; 
+
+  }
+  .closeButton {
+    position: absolute;
+    top: 90px;
+    right: 400px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #999999;
+    font-size: 24px;
+  }
+  
+  .closeButton:hover {
+    color: #333333;
+  }
+  .formContainer h2 {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #333333;
+  }
+  
+  .imageContainer {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .selectedImage {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  .imageLabel {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #8172E8;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+  }
+  
+  .imageInput {
+    display: none;
+  }
+  
+  .imageLabel:hover {
+    background-color: #B69FEB;
+  }
+  
+  .label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #666666;
+
+  }
+  
+  .inputText {
+    width: calc(60% - 20px);
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #333333;
+    margin-bottom: 10px;
+  }
+  .textarea {
+    width: calc(60% - 20px);
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 15px;
+    font-size: 16px;
+    color: #333333;
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 10px; /* Set minimum height */
+    max-height: 80px; /* Set maximum height */
+    overflow-y: auto; 
+  }
+  
+  
+  .button {
+    width: 60%;
+    padding: 10px ;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #8172E8;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #B69FEB;
+  }

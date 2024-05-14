@@ -1,0 +1,11 @@
+.communityPage {
+  display: flex;
+  flex-direction: column; /* Stack sections vertically */
+  align-items: center; /* Center sections horizontally */
+}
+
+.section {
+  width: 100%; /* Ensure sections take full width */
+  max-width: 1500px; /* Set max-width for better readability */
+  margin-bottom: 20px; /* Add some space between sections */
+}

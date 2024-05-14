@@ -1,0 +1,142 @@
+/* SearchBar.module.css */
+
+.searchBar {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 5px;
+    background-color: #fff; /* White background */
+    border-radius: 10px;
+    padding: 16px; /* Add padding for spacing */
+  }
+  
+  
+  .input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    width: 98%;
+    margin-bottom: 10px;
+    background-color: #f7f7f7; 
+    
+  }
+  .input:focus {
+    border-color: #8172E8;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
+  }
+  
+  .button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #8172E8;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 5px;
+  }
+  
+  .button:hover {
+    background-color: #B69FEB;
+  }
+  
+  .advancedSearch {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7; /* Light gray background */
+    border-radius: 8px;
+    padding: 16px; /* Add padding for spacing */
+    margin-top: 20px; /* Increase top margin */
+  }
+  
+  .advancedSearchContainer {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 10px;
+  }
+  
+  
+  .filterInput {
+    padding: 8px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: inline-block;
+  }
+  .filterInputRow {
+    display: flex;
+    flex-wrap: wrap; /* Allow inputs to wrap to the next line if needed */
+    margin-bottom: 10px; /* Add margin bottom for spacing */
+    margin-left: 50px;
+  }
+  
+  .filterInputContainer {
+    margin-right: 50px; /* Add margin between filter inputs */
+  }
+  
+  .filterLabel {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block; /* Display labels as block elements */
+    color: #636363; /* Darker text color for better contrast */
+    font-weight: bold; /* Make the labels bold for emphasis */
+    
+  }
+  .loc_job{
+    width: 100px;
+  }
+  .filterInput {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 250px; 
+    transition: border-color 0.3s;
+    background-color: #f7f7f7; 
+    color: #383838;
+  }
+  
+  .filterInput:hover, .filterInput:focus {
+    border-color: #8172E8;
+  }
+  
+  /* Style the select dropdown arrow */
+  
+  .filterInput::-ms-expand,
+  .filterInput::after {
+    content: '▼'; /* Unicode for down arrow */
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  /* Remove default styling for IE */
+  .filterInput::-ms-expand {
+    display: none;
+  }
+  
+  /* Style select dropdown options */
+  .filterInput option {
+    background-color: #fff; /* White background for options */
+    color: #383838; /* Text color */
+    padding: 15px;
+    font-size: 14px;
+   
+  }
+  
+  /* Style select dropdown when open */
+  .filterInput:focus option:checked {
+    background-color: #8172E8; /* Purple background color for selected option */
+    color: #fff; /* Text color */
+  }
+  

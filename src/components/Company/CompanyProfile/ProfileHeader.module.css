@@ -1,0 +1,86 @@
+
+
+.editIcon {
+  color: #8172E8; /* Edit icon color */
+  font-size: 20px; /* Adjust size as needed */
+  text-decoration: none;
+  margin-left: 400px; /* Align edit icon to the right */
+  background-color: transparent; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  cursor: pointer;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.recommendations {
+  display: flex;
+  align-items: center;
+  margin-right: 10px; /* Add margin between indicators */
+  margin-left: 50px;
+}
+
+.recommended,
+.unrecommended {
+  color: #160d39; /* Edit icon color */
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 17px;
+  font-weight: 700;
+  margin-right: 10px; /* Add margin between indicators */
+
+}
+/* ProfileHeader.module.css */
+
+.header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.profileInfo {
+  display: flex;
+  align-items: center;
+  margin-left: 20px; /* Adjust margin */
+}
+
+.avatar img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.userInfo {
+  margin-left: 20px;
+}
+
+.userInfo h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+/* Styling for each individual <p> tag */
+.userInfo p {
+  margin: 5px 10px; /* Add margin for separation */
+  font-size: 16px;
+  color: #555;
+}
+
+
+
+/* Styling for recommendations */
+.recommendations {
+  margin-left: auto; /* Push recommendations to the right */
+  color: #160d39;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.number {
+  color: #B69FEB;
+}

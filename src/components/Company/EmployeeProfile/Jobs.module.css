@@ -1,0 +1,46 @@
+/* Jobs.module.css */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .job {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .job:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .jobTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .companyName {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .duration {
+    font-size: 16px;
+    color: #888;
+  }
+  
+  .jobDescription {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
+  }
+  

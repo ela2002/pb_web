@@ -1,0 +1,76 @@
+/* AddForm.module.css */
+
+.addFormContainer {
+  height: 550px; /* Set the height of the container to auto */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  width: 550px;
+}
+
+.scrollWrapper {
+  padding-right: 20px; /* Add padding to compensate for scrollbar width */
+}
+
+.addForm {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.addForm h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333333;
+  font-size: 24px;
+}
+
+.addFormLabel {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.addFormInput,
+.addFormTextarea {
+  width: 90%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: border-color 0.3s ease;
+}
+
+.addFormInput:focus,
+.addFormTextarea:focus {
+  border-color: #007bff;
+}
+
+.addFormTextarea {
+  resize: vertical;
+}
+
+.addFormButton {
+  width: calc(50% - 10px); /* Set button width to 50% of the container width with margin */
+  padding: 15px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.addFormButton:hover {
+  background-color: #0056b3;
+}
+
+.addFormButton:focus {
+  outline: none;
+}
+
+.addFormButton + .addFormButton {
+  margin-left: 20px; /* Add margin between buttons */
+}

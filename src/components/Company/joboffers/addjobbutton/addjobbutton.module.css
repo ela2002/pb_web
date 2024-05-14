@@ -1,0 +1,128 @@
+.addButtonContainer {
+    display: flex;
+    justify-content: center; /* Center align items horizontally */
+  }
+  .addFormContainer
+  {
+    margin-top: 50px;
+  }
+  
+  .addButton {
+    background-color: #8172E8;
+    color: #ffffff;
+    padding: 20px; /* Adjust padding */
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px;
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  .addButton:hover {
+    background-color: #76d6d0;
+  }
+  
+  .plusIcon {
+    margin-right: 10px; /* Adjust spacing between icon and text */
+  }
+  
+
+
+/* Overlay style for the background blur */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 100; /* Ensure it's above other content */
+  }
+  
+  .addFormContainer {
+    position: fixed;
+    top: 50%; /* Center the form vertically */
+    left: 50%; /* Center the form horizontally */
+    transform: translate(-50%, -50%); /* Move the form back to the center */
+    height: 550px;
+    overflow-y: auto;
+    width: 550px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 101; /* Ensure it's above the overlay */
+  }
+  
+  .scrollWrapper {
+    padding-right: 20px;
+  }
+  
+  .addForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+  .addForm h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 24px;
+  }
+  
+  .addFormLabel {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333333;
+  }
+  
+  .addFormInput,
+  .addFormTextarea {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .addFormInput:focus,
+  .addFormTextarea:focus {
+    border-color: #007bff;
+  }
+  
+  .addFormTextarea {
+    resize: vertical;
+  }
+  
+  .addFormButton {
+    width: calc(50% - 10px);
+    padding: 15px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addFormButton:hover {
+    background-color: #0056b3;
+  }
+  
+  .addFormButton:focus {
+    outline: none;
+  }
+  
+  .addFormButton + .addFormButton {
+    margin-left: 20px;
+  }
+  
+  /* Hide the form container when not visible */
+  .hidden {
+    display: none;
+  }
+  

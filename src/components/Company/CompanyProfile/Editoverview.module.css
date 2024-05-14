@@ -1,0 +1,73 @@
+/* Editoverview.module.css */
+
+.container {
+  position: fixed;
+  z-index: 999; /* Ensure the form is above other content */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(255, 255, 255); /* Semi-transparent white background */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow for depth */
+  padding: 20px;
+  margin-top: 60px;
+
+}
+.title
+{margin-left: 150px;
+}
+.form {
+  width: 200%;
+}
+
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+
+.input {
+
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.textarea
+{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  height: 100px;
+}
+.saveButton,
+.cancelButton {
+  background-color: #b67ae7;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.saveButton:hover,
+.cancelButton:hover {
+  background-color: #312d32;
+}
+
+.inputContainer
+{
+  width: 500px;
+}
+
+.cancelButton
+{
+  margin-left: 336px;
+}

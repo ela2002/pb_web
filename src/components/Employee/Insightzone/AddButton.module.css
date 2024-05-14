@@ -1,0 +1,26 @@
+.addButton {
+  background-color: #6c5ce7; /* Modern background color */
+  color: #ffffff;
+  padding: 15px 30px; /* Adjust padding */
+  border: none;
+  border-radius: 30px; /* Rounded border */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold font weight */
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 4px 8px rgba(108, 92, 231, 0.2); /* Soft shadow */
+  margin-top: 50px;
+}
+
+.addButton:hover {
+  background-color: #9775fa; /* Lighter color on hover */
+  transform: translateY(-2px); /* Move button slightly up */
+}
+
+.addButton:active {
+  transform: translateY(1px); /* Add press effect */
+}
+.plusIcon {
+  margin-right: 10px; /* Adjust spacing between icon and text */
+}

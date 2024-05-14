@@ -1,0 +1,18 @@
+/* SearchBar.module.css */
+.search-bar {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  margin-left: 20px;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent; /* Change background to transparent */
+  font-size: 16px;
+  color: #333; /* Adjust text color */
+}

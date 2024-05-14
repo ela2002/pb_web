@@ -1,0 +1,134 @@
+/* CompanyCard.module.css */
+
+/* Add styles for the company card */
+.companyCard {
+  display: flex;
+  align-items: flex-start;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  background-color: #fff; 
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+/* Add styles for the logo */
+.logo {
+  width: 200px; 
+  height: auto;
+  margin-right: 20px; 
+  margin-top: 50px;
+}
+
+/* Add styles for the company info */
+.companyInfo {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Add styles for the company name */
+.companyName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 10px; 
+}
+
+/* Add styles for the rating container */
+.ratingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Add styles for the label */
+.label {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-right: 5px;
+  color: #636363; /* Darker text color for better contrast */
+}
+
+/* Add styles for the value */
+.value {
+  font-size: 1rem;
+}
+
+/* Add specific styles for each label and value */
+.ratingLabel,
+.recommendationsLabel,
+.unrecommendationsLabel,
+.locationLabel,
+.sizeLabel,
+.industryLabel,
+.descriptionLabel {
+  display: inline-block; /* Ensure labels and values are displayed on the same line */
+}
+
+.ratingValue,
+.recommendationsValue,
+.unrecommendationsValue,
+.locationValue,
+.sizeValue,
+.industryValue,
+.descriptionValue {
+  display: inline-block; /* Ensure labels and values are displayed on the same line */
+  margin-left: 5px; /* Add some space between label and value */
+}
+
+/* Add specific styles for the StarRating component */
+.starRating {
+  display: flex;
+  align-items: center;
+}
+
+.starRating .star {
+  margin-right: 5px; /* Adjust margin between stars */
+}
+
+.linkStyle {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+/* Add styles for the interested button */
+.interestButton {
+  padding: 10px 20px;
+  background-color: #8172E8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.interestButton:hover {
+  background-color: #B69FEB;
+}
+
+/* Add styles for the recommendations container */
+.recommendationsContainer {
+  display: flex;
+  flex-direction:row;
+  align-items: flex-end; /* Align items to the right */
+  margin-top: 0;
+  margin-left: 800px;
+}
+
+/* Add styles for the recommendations icon */
+.recommendationsIcon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.recommendationsIcon svg {
+  margin-right: 5px;
+}
+.inline_items {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

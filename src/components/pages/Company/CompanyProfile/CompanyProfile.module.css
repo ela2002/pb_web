@@ -1,0 +1,23 @@
+/* UserProfile.module.css */
+
+/* Container styles */
+.container {
+   display: flex;
+   flex-direction: column;
+   margin-top: 10px;
+ }
+ .loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+ /* Responsive styles for small screens */
+ @media (max-width: 767px) {
+   /* Adjust margins and paddings */
+   .container {
+     margin-top: 0;
+     padding-top: 60px; /* Account for the navbar height */
+   }
+ }
+ 

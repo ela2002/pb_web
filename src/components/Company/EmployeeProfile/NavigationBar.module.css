@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    justify-content: center; /* Center align the buttons */
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc; /* Add a thin solid border at the bottom of the navbar */
+    padding-bottom: 10px; /* Add padding to space out the line from the buttons */
+  }
+  
+  .navButton {
+    padding: 10px 20px;
+    margin: 0 5px; /* Add margin between buttons */
+    border: none;
+    border-radius: 5px;
+    background-color: transparent; /* Transparent background */
+    color: #333; /* Button text color */
+    font-size: 16px; /* Button text font size */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+  
+  .navLink {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 10px;
+    color: #333;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navLink:hover {
+    background-color: #B69FEB;
+    border-radius: 10px;
+  
+  }
+  
+  .active {
+    background-color: #B69FEB;
+    border-radius: 10px;
+  }
+  
+  
+  .navButton:hover {
+    background-color: #B69FEB; 
+    border-radius: 10px;
+    /* Light background color on hover */
+  }
+  

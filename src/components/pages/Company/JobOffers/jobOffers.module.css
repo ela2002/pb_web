@@ -1,0 +1,16 @@
+
+  .Container{
+      margin-top: 10px;
+      padding: 20px;
+  }
+
+  .jobcard
+  {
+    margin-top: 40px;
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }

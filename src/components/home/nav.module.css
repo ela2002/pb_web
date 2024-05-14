@@ -1,0 +1,97 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121723;
+    
+  }
+  .navbar {
+    position: fixed;
+    width: 98.8%;
+    height: 90px;
+    z-index: 0; 
+    line-height: 20px;
+    border-bottom: 0.5px solid #3f3f3f;
+  
+  }
+  /* nav.module.css */
+
+.navbar {
+    transition: background-color 0.3s ease; /* Add transition for smooth color change */
+  }
+  
+  .scrolled {
+    /*background-color: #1C212C;*/
+    border-radius: 2px;
+ 
+    border-bottom: 0.5px solid #8b8a8a;
+    border-color:linear-gradient( #e3e3e3 ,rgb(160, 160, 160),#e3e3e3
+    ); /* Change background color with transparency */
+   /* backdrop-filter: blur(100px); /* Apply blur effect */
+
+        background-color: rgba(37, 37, 42, 0.5); /* Change background color with transparency */
+        backdrop-filter: blur(10px); /* Apply blur effect */
+
+  }
+  
+  /* Add other styles as needed */
+  
+
+  h1
+  {
+    color: #7D55C7;
+    font-size: 27px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .logoo{
+    width: 100px;
+    height: 80px;
+   
+  }
+  .logoo
+  {
+    display: flex;
+    justify-content: left;
+    margin-left: 70px;
+ 
+  }
+  .navlinks
+  {
+    margin-right: -40px;
+  }
+ .links:hover
+ {
+    color:#e3e3e3;
+ }
+  .navlinks a {
+    text-decoration: none;
+    color: #B8B9BD;
+    font-size: 16px;
+    margin-right: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+  }
+  
+  .authbuttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .authbuttons a, .authbuttons button {
+    text-decoration: none;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .authbuttons button {
+   
+    width:110px;
+    height: 50px;
+    border-radius: 5px;
+  }
+
+  
+  

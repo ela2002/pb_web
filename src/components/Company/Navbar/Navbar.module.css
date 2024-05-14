@@ -1,0 +1,208 @@
+/* Navbar.module.css */
+.navbar {
+    position: fixed; /* Fix the navbar position */
+    top: 0; /* Stick it to the top */
+    left: 0;
+    width: 97%; /* Occupy full width */
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    color: #160d39; /* Violet foncé */
+    padding: 10px 20px; /* Reduce padding horizontally */
+   
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1d1d1;
+    margin-bottom: 100px;
+  }
+ 
+  .logo {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #8172E8; /* Violet */
+    text-decoration: none;
+  }
+  /* Navbar.module.css */
+  .search {
+    background-color: #f5f5f5;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .searchIcon {
+    margin-right: 10px; 
+    color: #988aca;
+  }
+  
+  .input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #333;
+    width: 120px;
+   
+  }
+  body{
+    margin-top: 100px;
+  }
+  .navLinks li a {
+    font-family: 'Roboto', sans-serif; 
+    color: #160d39; /* Violet foncé */
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    padding: 8px 15px;
+    border-radius: 20px; /* Bords arrondis */
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    align-items: center; 
+  }
+  
+  .navLinks li a:hover {
+    background-color: #8172E8; 
+    color: white;
+   
+  }
+  
+  .navLinks {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the links horizontally */
+    align-items: center;
+    margin-right: 150px;
+  
+  }
+  
+  .navLinks li {
+    margin-right: 20px;
+    margin: 0 10px;
+  }
+  .logoLink {
+    text-decoration: none;
+  }
+  .navLinks li a {
+    color: #160D39; 
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .chatIcon,
+  .notificationIcon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #8172E8; /* Violet */
+  }
+  
+  .profileCircle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+     
+  }
+  
+  .profilePic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .dropdownContent {
+    display: none;
+    position: absolute;
+    top: 60px; /* Adjust the distance from the profile picture */
+    right: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 8px 0;
+    z-index: 1;
+  }
+  
+  .profileCircle:hover .dropdownContent {
+    display: block;
+  }
+  
+  .dropdownItem {
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Adjust padding */
+    text-decoration: none;
+    color: #464646; /* Adjust text color */
+    transition: background-color 0.3s ease;
+    font-weight: 500;
+  }
+  
+  .dropdownItem:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  
+  .dropdownIcon {
+    margin-right: 8px; /* Adjust spacing between icon and text */
+  }
+  /* Hide the burger icon by default */
+  .mobileIcon {
+    display: none;
+  }
+  
+  /* Show the burger icon only on small screens */
+  /* Navbar.module.css */
+  
+  /* Responsive styles for small screens */
+  @media (max-width: 767px) {
+    /* Show the hamburger icon */
+    .mobileIcon {
+      display: block;
+    }
+  
+    /* Hide the navigation links by default */
+    .navLinks {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ffffff;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      transition: transform 0.3s ease-in-out;
+      transform: translateY(-100%);
+    }
+  
+    /* Show the navigation links when 'show' class is applied */
+    .navLinks.show {
+      display: flex;
+      transform: translateY(0);
+    }
+  
+    /* Hide the full logo text */
+    .logo .logoFull {
+      display: none;
+    }
+  }
+  
+  /* Show the full logo text on larger screens */
+  @media (min-width: 768px) {
+    /* Hide the abbreviated logo text */
+    .logo .logoMobile {
+      display: none;
+    }
+  }

@@ -1,0 +1,51 @@
+/* Applications.module.css */
+
+.applicationsContainer {
+    padding: 20px;
+}
+.loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.applicationGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+.companyLogo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.title{
+    font-size: 2rem;
+    color: #9560b4; /* Adjust color to fit your design */
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; 
+}
+.applicationBox {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.applicationBox:hover {
+    transform: translateY(-5px);
+}
+
+.applicationBox h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.applicationBox p {
+    margin: 0;
+    font-size: 16px;
+    color: #666666;
+}

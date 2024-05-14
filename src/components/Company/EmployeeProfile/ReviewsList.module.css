@@ -1,0 +1,359 @@
+/* ReviewsList.module.css */
+
+.reviewsList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.review {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  width: 55%;
+  max-width: 800px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.addReviewButton {
+  background-color: #8172E8;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 15px;
+  width: 50%;
+}
+
+.addReviewButton:hover {
+  background-color: #B69FEB;
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  font-weight: bold;
+  color: #333333;
+  margin-right: 10px;
+}
+
+.date {
+  font-size: 14px;
+  color: #666666;
+}
+
+.reviewContent {
+  margin-top: 15px;
+}
+
+.rating {
+  font-weight: bold;
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+.comment {
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  color: #333333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+.anonymous {
+  color: #666666;
+  font-style: italic;
+}
+
+.reviewActions {
+  display: flex;
+  align-items: center;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.action span {
+  margin-left: 5px;
+}
+.review {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.options {
+  cursor: pointer;
+}
+
+.editDeleteIcons {
+  display: none;
+}
+
+.ratingContainer {
+  margin-bottom: 10px;
+}
+
+.tags {
+  margin-bottom: 10px;
+}
+
+.tag {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 4px 8px;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+
+.anonymous {
+  font-style: italic;
+  color: #777;
+}
+
+.reviewActions {
+  display: flex;
+  align-items: center;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+  justify-content: space-between;
+}
+
+.actionText {
+  margin-left: 5px;
+}
+
+.options {
+  position: relative;
+  margin-left: 300px;
+
+}
+
+.optionsIcon {
+  cursor: pointer;
+}
+
+.editDeleteIcons {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.options:hover .editDeleteIcons {
+  display: block;
+}
+
+.editDeleteIcons .editIcon,
+.editDeleteIcons .deleteIcon {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.editDeleteIcons .editIcon {
+  color: #007bff;
+}
+
+.editDeleteIcons .deleteIcon {
+  color: #dc3545;
+}
+
+.editDeleteIcons .editIcon:hover,
+.editDeleteIcons .deleteIcon:hover {
+  background-color: #f8f9fa;
+}
+
+/* ReviewsList.module.css */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addReviewCard {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 400px;
+}
+
+.addReviewCard h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.rating,
+.commentInput,
+.tagInput,
+.buttons {
+  margin-bottom: 15px;
+}
+
+.rating label,
+.buttons button {
+  margin-right: 10px;
+}
+
+.rating select,
+.commentInput,
+.tagInput {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.rating select:focus,
+.commentInput:focus,
+.tagInput:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: #0056b3;
+}
+
+.cancelButton {
+  background-color: #cccccc;
+  color: #000000;
+}
+
+.cancelButton:hover {
+  background-color: #999999;
+}
+
+.labelCheckbox {
+  display: flex;
+  align-items: center;
+}
+
+.labelCheckbox input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.editReviewCard {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px; /* Increase border-radius for more rounded edges */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 400px; /* Adjust the width as needed */
+}
+
+.editReviewCard h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.editReviewCard label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.editReviewCard select,
+.editReviewCard textarea,
+.editReviewCard input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.editReviewCard label input[type="checkbox"] {
+  margin-right: 5px;
+}
+
+.editReviewCard .buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.editReviewCard button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #fff;
+}
+
+.editReviewCard button:hover {
+  background-color: #0056b3;
+}

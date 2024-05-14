@@ -1,0 +1,39 @@
+.companiesPage {
+  padding: 20px;
+}
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.searchContainer {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.linkStyle {
+  text-decoration: none; /* Remove underline */
+  color: inherit; /* Inherit text color */
+}
+/* Responsive styles for small screens */
+@media (max-width: 767px) {
+  .searchContainer {
+    margin: 0; /* Remove left and right margins */
+    border-radius: 0; /* Remove border radius */
+    box-shadow: none; /* Remove box shadow */
+  }
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 479px) {
+  .searchContainer {
+    padding: 10px; /* Reduce padding */
+  }
+}

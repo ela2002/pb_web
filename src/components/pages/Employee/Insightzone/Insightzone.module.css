@@ -1,0 +1,155 @@
+/* Insightzone.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px; /* Add margin to the top of the container */
+  
+}
+.navbar {
+  margin-bottom: 10px;
+}
+
+.content_container {
+  /* Styles pour le conteneur du contenu */
+  display: flex;
+  justify-content: space-between;
+  
+}
+.left_section,
+.middle_section,
+.right_section {
+  margin-bottom: 20px; /* Add space at the bottom of each section */
+  display: flex;
+  align-items: center; /* Center vertically */
+  flex-direction: column; /* Align items vertically */
+  text-align: center; /* Center text horizontally */
+}
+
+
+
+.left_section {
+  flex: 1;
+}
+.middle_section {
+  flex: 3;
+}
+.right_section {
+  flex: 2;
+}
+
+.addPostCardOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addPostCard {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 400px; /* Adjust width as needed */
+  max-width: 90%; /* Responsive max-width */
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  width: 97%;
+  height: 150px; /* Increase height */
+  margin-bottom: 20px; /* Adjust margin */
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  resize: none;
+}
+
+.imageUploadLabel {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 20px; /* Adjust margin */
+  align-self: flex-start;
+}
+
+.imageUploadInput {
+  display: none;
+}
+
+.imageIcon {
+  margin-right: 10px;
+}
+
+.postButton {
+  background-color: #8172E8;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  align-self: flex-end;
+}
+
+.postButton:hover {
+  background-color: #B69FEB;
+}
+.imageUploadLabel,
+.postButton {
+  margin-top: 10px; /* Adjust spacing */
+}
+/* Responsive design for smaller screens */
+@media (max-width: 767px) {
+  .content_container {
+    flex-direction: column; /* Stack sections vertically */
+  }
+
+  .left_section,
+  .middle_section,
+  .right_section {
+    width: 100%; /* Take full width on small screens */
+  }
+  
+  .addPostCardOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .addPostCard {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    width: 90%; /* Adjust width for smaller screens */
+    max-width: 400px; /* Limit maximum width */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .addPostCard.show {
+    display: block; /* Show the AddPostCard on smaller screens */
+  }
+
+  .textarea,
+  .imageUploadLabel,
+  .postButton {
+    margin-top: 10px; /* Add spacing between elements */
+  }
+}

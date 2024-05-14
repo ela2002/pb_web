@@ -1,0 +1,138 @@
+.editProfileCardOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editProfileCard {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  max-height: 80%;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 100px;
+}
+
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: #b9b9b9;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.closeButton:hover {
+  background-color: rgba(218, 218, 218, 0.685);
+  color: #555;
+  border-radius: 50%;
+  padding: 5px;
+}
+.profilePicture {
+  display: flex;
+  flex-direction: column; /* Change to column direction */
+  align-items: center; /* Align items horizontally */
+  margin-bottom: 20px;
+
+}
+
+.profilePicContainer {
+  position: relative;
+  width: 100px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+}
+
+.profilePic {
+  width: 50%;
+  height: 50%;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.fileInput {
+  margin-top: 50px; /* Add margin between profile picture and file input */
+}
+
+.fileInputLabel {
+  margin-top: 10px;
+  background-color: #8172e8;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  border-radius: 15px;
+
+}
+
+.fileInputLabel:hover {
+  background-color: #b69feb;
+}
+
+.fileInput input[type="file"] {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.fileNameDisplay {
+  margin-top: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input,
+.textarea {
+  margin-bottom: 15px;
+  width: 300px;
+  padding: 12px; /* Adjust padding */
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  margin-left: 80px;
+}
+
+/* Styles for the submit button */
+.submitButton {
+  width: 300px;
+  margin-left: 90px;
+  background-color: #8172e8;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  padding: 12px 20px; /* Adjust padding */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #b69feb;
+}
+
+.submitButton:focus {
+  outline: none;
+}

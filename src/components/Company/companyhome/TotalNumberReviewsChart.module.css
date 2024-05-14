@@ -1,0 +1,11 @@
+.totalNumberReviews {
+    padding: 20px;
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  

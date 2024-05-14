@@ -1,0 +1,67 @@
+.articleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for depth */
+    border-radius: 10px; /* Add border radius for rounded corners */
+    background-color: #fff; /* Add white background */
+    padding: 20px; /* Add padding for spacing */
+    width: 600px;
+    margin-left: 300px;
+  }
+  .loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  .articleImage {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for the image */
+  }
+  
+  .articleDetails {
+    max-width: 600px;
+    text-align: left;
+  }
+  
+  .articleTitle {
+    font-size: 28px; /* Increase font size for title */
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .articleContent {
+    font-size: 18px; /* Increase font size for content */
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .authorDetails {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px; /* Increase font size for author details */
+  }
+  
+  .author,
+  .postedDate {
+    color: #888;
+  }
+  .loadingContainer {
+    display: flex;
+    justify-content: center; /* Horizontally center the loader */
+    align-items: center; /* Vertically center the loader */
+    height: 100vh; /* Set the container height to full viewport height */
+  }
+  
+  .loadingContainer > div {
+    margin: auto; /* Center the loader */
+  }
+  

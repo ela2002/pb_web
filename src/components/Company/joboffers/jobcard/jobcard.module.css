@@ -1,0 +1,104 @@
+/* jobcard.module.css */
+
+
+.jobCard {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    width: 80%; /* Adjust the width as needed */
+    margin: 0 auto; /* Center the job card horizontally */
+  }
+  
+  /* Container for job cards */
+.jobCardContainer {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line */
+    justify-content: space-between; /* Distribute cards evenly with space between */
+  }
+  
+  /* Individual job card */
+  .jobCard {
+    /* Add margin to create spacing between cards */
+    margin-bottom: 20px; /* Adjust the value as needed */
+    flex: 0 0 calc(33.33% - 20px); /* Adjust card width for three cards per row */
+    /* Assuming each card takes up one-third of the container width with 20px spacing between */
+  }
+  
+  
+  .companyInfo {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .logo {
+    width: 200px; 
+    height: auto;
+    margin-right: 50px; 
+    margin-left: 50px;
+  }
+  
+  .jobDetails {
+    flex-grow: 1; /* Allow job details to expand */
+  }
+  
+  /* Add other styles as needed */
+  
+  
+  .jobCard {
+    position: relative;
+  }
+  
+  .buttonsContainer {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+  }
+  
+  .editButton,
+  .deleteButton {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .editButton {
+    background-color: #4caf50; /* Green */
+    color: white;
+  }
+  
+  .deleteButton {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  .editButton:hover,
+  .deleteButton:hover {
+    opacity: 0.8;
+  }
+  
+  
+  .jobRequirements {
+    margin-top: 20px;
+  }
+  
+  .requirementItem {
+    margin-bottom: 10px;
+  }
+  
+  .input {
+    width: auto;
+    background-color: #f0edf1;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #241f26;
+     text-align: center;
+    padding: 4px;
+    border: 1px solid #271e2c;
+    border-radius: 9px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+  

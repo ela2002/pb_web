@@ -1,0 +1,11 @@
+.averageInteractions {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .value {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  

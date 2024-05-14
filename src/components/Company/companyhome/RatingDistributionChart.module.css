@@ -1,0 +1,26 @@
+.ratingDistribution {
+  padding: 20px;
+  border-radius: 8px;
+}
+/* RatingDistributionChart.module.css */
+.ratingDistribution {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.starAndBar {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.row {
+display: flex;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.barChartContainer {
+margin-left: 10px;
+}

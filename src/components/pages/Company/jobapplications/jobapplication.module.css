@@ -1,0 +1,115 @@
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 630px;
+  }
+  
+  .backButton {
+    background-color: #ccc;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .applicationsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 20px;
+  }
+  
+  .application {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .applicationDetails {
+    margin-bottom: 10px;
+  }
+  
+  .applicationDetails p {
+    margin: 0;
+  }
+  
+  .buttonsContainer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .acceptButton,
+  .rejectButton {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  .rejectButton:hover {
+    background-color: #b30003;
+  }
+  .acceptButton:hover
+  {
+    background-color: #00b32a;
+  }
+
+
+  /* Add these styles to your jobapplication.module.css file */
+
+.application {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.applicationDetails {
+  margin-bottom: 10px;
+}
+
+.applicationDetails p {
+  margin: 5px 0;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.acceptButton, .rejectButton {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.acceptButton:hover, .rejectButton:hover {
+  opacity: 0.8;
+}
+
+/* Define colors for accepted and rejected applications */
+.accepted {
+  background-color: #d4edda; /* Green background for accepted applications */
+}
+
+.rejected {
+  background-color: #f8d7da; /* Red background for rejected applications */
+}

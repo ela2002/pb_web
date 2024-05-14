@@ -1,0 +1,45 @@
+
+
+.container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+
+  
+  .employeePostCard {
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 10px ;/* Adjust width as needed */
+    margin-left: 120px;
+    width: 500px; /* Adjust width as needed */
+    height: 300px;
+    border-radius: 30px;
+    
+
+  }
+  
+  .postHeader {
+    margin-bottom: 20px;
+  }
+  
+  .postTitle {
+    margin: 0;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .postDate {
+    margin: 0;
+    color: #666;
+  }
+  
+  .postContent {
+    color: #555;
+    line-height: 1.6;
+  }
+  
+  
+ 
+  

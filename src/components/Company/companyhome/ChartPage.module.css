@@ -1,0 +1,25 @@
+.chartPage {
+  padding: 20px;
+  margin-left: 110px;
+  margin-right: 110px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.col {
+  flex: 1;
+  margin-right: 16px;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 16px;
+}

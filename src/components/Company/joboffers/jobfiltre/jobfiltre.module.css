@@ -1,0 +1,53 @@
+.jobOfferFilterCard {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  height: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filterheader {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+
+}
+
+.filteroptions {
+  margin-bottom: 15px;
+}
+
+.filteroption {
+  margin-bottom: 20px;
+}
+
+.filterLabel{
+  display: block;
+  margin-bottom: 10px;
+  font-size: 20px;
+
+}
+
+.filterinput,
+.filterselect {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 1.2rem;
+}
+
+.filterbutton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 24px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.filterbutton:hover {
+  background-color: #0056b3;
+}

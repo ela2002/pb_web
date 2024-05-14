@@ -1,0 +1,131 @@
+/* JobCard.module.css */
+
+/* Add styles for the job card */
+.jobCard {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    width: 1110px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+  /* Add styles for the image container */
+  .imageContainer {
+    margin-right: 20px;
+  }
+  
+  /* Add styles for the image */
+  .image {
+    width: 200px;
+    height: auto;
+  }
+  
+  /* Add styles for the job details */
+  .jobDetails {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Add styles for the job title */
+  .title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Add styles for the labels and values */
+  .details {
+    display: flex;
+    margin-bottom: 5px;
+  }
+  
+  .label {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+  
+  .value {
+    margin-left: 5px;
+  }
+  
+  /* Add styles for the tags container */
+  .tagsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+  }
+  
+  /* Add styles for the requirements */
+  .requirement {
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    color: #333;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .buttonsContainer {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align items horizontally with space between them */
+    width: 100%; /* Ensure full width */
+  }
+  
+  .detailsButton,
+  .applyButton {
+    padding: 12px 24px;
+    background-color: transparent;
+    color: #B69FEB;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+    font-size: 1rem;
+    width: calc(50% - 2.5px); /* Adjusted width for half space and accounting for border width */
+    display: inline-flex; /* Change display to inline-flex */
+    justify-content: center; /* Align text horizontally */
+    align-items: center;
+  }
+  
+  .detailsButton:hover {
+    background-color: #B69FEB;
+    color: #fff;
+  }
+  
+  .applyButton {
+    background-color: #8172E8;
+    color: #fff;
+    border: none;
+    width: 450px;
+    margin-left: 10px;
+  }
+  .detailsButton{
+    border: 2px solid #B69FEB;
+    margin-right: 5px;
+    text-decoration: none;
+    width: 380px;
+
+  }
+  .applyButton:hover {
+    background-color: #9b92d4;
+
+  }
+  
+  .appliedButton {
+    background-color: #ccc; /* Grey background */
+    color: #666; /* Dark grey text */
+    border: none; /* No border */
+    padding: 8px 16px; /* Padding */
+    cursor: not-allowed; /* Cursor indicating not clickable */
+    opacity: 0.7; /* Reduced opacity */
+    border-radius: 4px; /* Rounded corners */
+    width: 450px;
+  }
+  
+  /* Optionally, you can add additional styles to differentiate it further */
+  .appliedButton:hover {
+    background-color: #bbb; /* Darker grey background on hover */
+  }

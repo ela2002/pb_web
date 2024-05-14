@@ -1,0 +1,12 @@
+.starRating {
+    display: inline-block;
+  }
+  
+  .checked {
+    color: #ffc107; /* Color for filled star */
+  }
+  
+  .unchecked {
+    color: #e0e0e0; /* Color for empty star */
+  }
+  

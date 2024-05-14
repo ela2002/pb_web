@@ -1,0 +1,78 @@
+.container {
+  background-color: #fff;
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 19px;
+  margin-bottom: 15px;
+  /*margin-left: 300px;*/
+  color: #9b7ce5;
+}
+
+.content {
+  color: #555;
+}
+
+.description {
+  margin-bottom: 10px;
+  line-height: 1.8;
+  font-size: 1.1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(62, 62, 62);
+}
+
+
+.phone {
+  font-weight: bold;
+}
+
+
+
+
+
+.editIcon {
+  color: #151225; /* Edit icon color */
+  font-size: 20px; /* Adjust size as needed */
+  text-decoration: none;
+  margin-left: 700px; /* Align edit icon to the right */
+  background-color: transparent; /* Remove background */
+  border: none; /* Remove border */
+  padding: 0; /* Remove padding */
+  cursor: pointer;
+}
+
+
+.editIcon:hover .editText {
+  color: #9b7ce5;
+}
+
+.editText{
+  font-size:12px;
+}
+.icons {
+  display: flex;
+  align-items: center;
+}
+/* Overview.module.css */
+
+.container {
+  position: relative;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 999; /* Ensure the form is above other content */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

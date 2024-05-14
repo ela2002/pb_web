@@ -1,0 +1,21 @@
+/* Mentions.module.css */
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .cvPreview {
+    margin-top: 20px;
+  }
+  
+  .cvPreview p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  

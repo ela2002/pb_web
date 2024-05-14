@@ -1,0 +1,133 @@
+.profileback {
+  background-color: #121723;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.profileDetailsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+.profileContent {
+  width: 100%;
+  max-width: 600px;
+}
+
+.profilePictureContainer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profilePictureContainer input[type="file"] {
+  display: none;
+}
+
+.profilePicture {
+  max-width: 100px;
+  max-height: 100px;
+  margin-left: 0px;
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #d7d1da;
+}
+
+
+
+.inputField:focus {
+  outline: none;
+  border-color: #712f87; /* Changing border color on focus for better feedback */
+}
+.input
+{
+  width: 300px;
+  height: 25px;
+  padding: 12px; /* Increased padding for a smoother appearance */
+  background-color: #f8f9fa;
+  border: none;
+  border-bottom: 1px solid  rgb(100, 100, 100);; /* Only bottom border shown in grey */
+  border-radius: 0;
+  box-sizing: border-box;
+  margin-bottom: 15px; /* Increased margin for better separation */
+  transition: border-color 0.3s ease; /* Smooth transition for border color */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputField {
+  width: calc(100% - 20px); /* Adjusting width to leave space for padding */
+
+}
+.formGroup
+{
+  align-items: center;
+  margin-left: 50px;
+
+}
+.buttonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.label {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: 15px;
+  color: rgb(114, 114, 114);
+  text-align: center;
+}
+
+/* Button Styles */
+.topLeftButton,
+.topRightButton,
+.bottomRightButton {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #712f87;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+.topLeftButton {
+  margin-right: auto;
+  margin-left: -39px;
+  border-radius: 100px;
+  background-color: transparent;
+  color: #121723;
+}
+
+.topRightButton {
+  margin-left: 465px;
+  color: #454b59;
+  border-radius: 100px;
+  background-color: transparent;
+
+}
+.topRightButton:hover {
+
+background-color: #d0badc;
+}
+
+.topLeftButton:hover {
+
+  background-color: #d0badc;
+  }
+.bottomRightButton {
+  margin-top: 20px;
+  margin-left: 412px;
+  width: 180px;
+  background-color:#9a70b3;
+}

@@ -1,0 +1,173 @@
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 470px;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+  }
+  
+  .userInfoContainer {
+    display: flex;
+    justify-content: flex-start; /* Align user info to the beginning */
+    align-items: center;
+    padding: 0 1rem; /* Adjust padding */
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    height: 3rem;
+    width: 3rem;
+  }
+  
+  .userInfo {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin-left: 1rem;
+    font-size: 18px;
+    color: #474747;
+  }
+  
+  .userInfoText {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #474747;
+    margin: 0.25rem 0; /* Reduce the vertical margin to make the elements closer */
+  }
+  
+  .optionsContainer {
+    position: relative;
+    margin-left: auto; /* Move the options button to the right */
+  }
+  
+  .optionsButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .optionsIcon {
+    height: 1.5rem;
+    transition: transform 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .optionsButton:hover .optionsIcon {
+    transform: rotate(90deg); /* Rotate the icon on hover */
+  }
+  
+  .dropdown {
+    position: absolute;
+    top: calc(100% + 0.5rem); /* Add a small gap between button and dropdown */
+    right: 0;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 150px; /* Set a fixed width for the dropdown */
+    overflow: hidden; /* Hide overflowing content */
+  }
+  
+  .dropdownItem {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 1rem; /* Add more padding for better spacing */
+    text-align: left;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 0.875rem;
+    color: #474747;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .dropdownItem:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Style the dropdown arrow */
+  .dropdownArrow {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-bottom: 6px solid #ccc;
+    transition: border-color 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  .dropdown:hover .dropdownArrow {
+    border-bottom-color: #666; /* Darken the arrow color on hover */
+  }
+  
+ 
+  
+  .textContentContainer {
+    padding: 0 1rem; /* Adjust padding */
+    margin-top: 1rem;
+    align-self: flex-start; /* Align text content to the beginning */
+  }
+  
+  
+  .textContent {
+    font-family: Roboto;
+    font-weight: 50;
+    font-size: 1rem;
+    color: #4b5563;
+    text-decoration: none;
+    letter-spacing: normal;
+    line-height: 1.5;
+    align-items:flex-start;
+    display: flex;
+
+  }
+  
+  .postImage {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+  }
+  
+  .actionButtonsContainer {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffffff;
+    margin-top: 10px;
+
+  }
+  
+  .actionButton {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 15px;
+    background-color: #ffffff;
+    border: none; /* Remove border */
+
+  }
+  
+  .actionButtonIcon {
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    background-color: #ffffff;
+
+  }
+  
+  .actionButtonText {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 1rem;
+    color: #4b5563;
+    text-decoration: none;
+    letter-spacing: normal;
+    line-height: 1.5;
+  }

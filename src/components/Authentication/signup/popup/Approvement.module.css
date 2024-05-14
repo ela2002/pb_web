@@ -1,0 +1,79 @@
+.allpage {
+    background-color: #121723;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 0vh;
+  }
+  
+  .container {
+
+    width: 690px;
+    margin-bottom: 220px;
+      height: 72vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 800px;
+      padding: 20px;
+      background-color: #f8f9fa;
+      border-radius: 10px;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+
+  
+  .VerificationContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    text-align: center; /* Center text horizontally */
+    height: 100%; 
+  }
+  
+ 
+
+  .VerificationContainer p {
+    font-size: 18px;
+    color: #2c303b;
+    margin-bottom: 10px;
+  }
+
+  .texts
+  {
+    width: 500px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #E8E8E8;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  .VerificationContainer svg {
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    fill: #712f87;
+  }
+  
+  .topLeftButton,
+  .topRightButton,
+  .bottomRightButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #712f87;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  
+
+  
+  .bottomRightButton {
+ margin-top: 50px;
+    margin-left: 420px;
+    width: 180px;
+    background-color:#9a70b3;
+  }
