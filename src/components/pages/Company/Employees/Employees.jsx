@@ -81,9 +81,9 @@ const Employees = () => {
         <div className={styles.profiles}>
           {profiles.map(profile => (
             <div key={profile.id} className={styles.profileCard}>
-              <Link className={styles.link} to={`/employeeprofile2/${profile.id}`}><img className={styles.profilePic} src={profile.profilePicture || avatar} alt={`Profile ${profile.id}`} /></Link>
+              <Link className={styles.link} to={`/employeeprofile3/${profile.id}`}><img className={styles.profilePic} src={profile.profilePicture || avatar} alt={`Profile ${profile.id}`} /></Link>
               <div className={styles.profileInfo}>
-              <Link className={styles.link} to={`/employeeprofile2/${profile.id}`}> <h3>{profile.fullName}</h3></Link>
+              <Link className={styles.link} to={`/employeeprofile3/${profile.id}`}> <h3>{profile.fullName}</h3></Link>
                 <p>{profile.jobTitle}</p>
                 <p className={styles.recommend}><GrLike />{profile.recommend || 0}</p>
                 <p className={styles.unrecommend}><GrDislike /> {profile.Unrecommend || 0}</p>

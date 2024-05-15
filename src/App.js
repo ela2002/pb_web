@@ -6,7 +6,6 @@ import SignIn from "./components/Authentication/signin/signin";
 import SignUp from "./components/Authentication/signup/signup";
 import JobOffers from "./components/pages/Company/JobOffers/jobOffers";
 import Employees from "./components/pages/Company/Employees/Employees";
-import EmployeeProfile from "./components/pages/Company/EmployeeProfile/EmployeeProfile";
 import CompanyProfile from "./components/pages/Company/CompanyProfile/CompanyProfile";
 import Chartpage from "./components/Company/companyhome/chartpage";
 import ConsultApplications from "./components/pages/Company/jobapplications/Jobapplication";
@@ -21,6 +20,7 @@ import JobDetails from "./components/Employee/JobOpportunities/JobDetails";
 import Applications from "./components/Employee/JobOpportunities/Applications";
 import JobOpportunities from "./components/pages/Employee/JobOpportunities/JobOpportunities";
 import EmployeeProfile2 from "./components/pages/Employee/EmployeeProfile2/EmployeeProfile2";
+import EmployeeProfile3 from "./components/pages/Company/EmployeeProfile1/EmployeeProfile1";
 import ForgotPassword from "./components/Authentication/signin/ForgotPassword";
 import ProtectedRoute from "./components/Authentication/protected/ProtectedRoute";
 import PublicRoute from "./components/Authentication/protected/PublicRoute";
@@ -86,6 +86,14 @@ const App = () => {
               element={
                 <ProtectedRoute>
                   <EmployeeProfile2 />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/employeeprofile3/:id"
+              element={
+                <ProtectedRoute>
+                  <EmployeeProfile3 />
                 </ProtectedRoute>
               }
             />
@@ -190,14 +198,6 @@ const App = () => {
               element={
                 <ProtectedRoute>
                   <CompanyProfile />
-                </ProtectedRoute>
-              }
-            />
-            <Route
-              path="/employeeprofile/:id"
-              element={
-                <ProtectedRoute>
-                  <EmployeeProfile />
                 </ProtectedRoute>
               }
             />
