@@ -53,11 +53,26 @@ const Employees = () => {
       console.error('Error unrecommending employee:', error);
     }
   };
+  const handleSearch = async (searchQuery) => {
+    setLoading(true);
+    try {
+      const profilesSnapshot = await getDocs(collection(firestore, 'employeesprofile'));
+      if (!profilesSnapshot.empty) {
+        const profilesData = profilesSnapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
+        const filteredProfiles = profilesData.filter(profile => profile.fullName.toLowerCase().includes(searchQuery.toLowerCase()));
+        setProfiles(filteredProfiles);
+      }
+    } catch (error) {
+      console.error('Error searching profiles:', error);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <div className={styles.profilesSection}>
       <Navbar />
-      <SearchBar></SearchBar>
+      <SearchBar handleSearch={handleSearch} />
       {loading ? (
         <div className={styles.loading}>
           <ClipLoader color="#B69FEB" size={50} speedMultiplier={0.5} />

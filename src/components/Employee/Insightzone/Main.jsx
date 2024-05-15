@@ -1,9 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
 import { doc, setDoc, collection, serverTimestamp, query, orderBy, onSnapshot, getDocs, where } from "firebase/firestore";
 import { firestore, auth } from "../../../firebase/firebase";
-import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage"; // Import necessary Firebase storage functions
+import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/storage"; 
 import styles from "./Main.module.css";
 import PostCard from "./PostCard";
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Main = () => {
   const [employeeData, setEmployeeData] = useState(null);
@@ -170,7 +171,9 @@ const Main = () => {
 
       <div className={styles.postContainer}>
         {loading ? (
-          <div>Loading...</div>
+           <div className={styles.loading}>
+           <ClipLoader color="#B69FEB" size={50} speedMultiplier={0.5} />
+         </div>
         ) : (
           <>
             {posts.map((post, index) => (

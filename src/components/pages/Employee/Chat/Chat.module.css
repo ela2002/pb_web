@@ -96,6 +96,7 @@
   display: flex;
   flex-direction: column;
   padding: 20px;
+  position: relative;
 }
 .welcomeMessage {
   display: flex;
@@ -160,6 +161,8 @@
 
 /* Input area */
 .inputArea {
+  position: sticky; /* Set position to sticky */
+  bottom: 0; /* Stick to the bottom of the .chatSection */
   display: flex;
   align-items: center;
   padding: 20px;

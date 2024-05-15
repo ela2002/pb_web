@@ -1,7 +1,6 @@
 // SignIn.js
 import React, { useState, useContext, useEffect } from "react";
 import styles from "./signup.module.css";
-import FirstPopup  from "./popup/firstpopup";
 import { auth, onAuthStateChanged } from "../../../firebase/firebase";
 import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
@@ -10,7 +9,6 @@ import ClipLoader from "react-spinners/ClipLoader";
 import { AuthContext } from "../../../AppContext/AppContext";
 
 const SignUp = () => {
-  const [showPopup, setShowPopup] = useState(false);
   const [loading, setLoading] = useState(false);
   const { registerWithEmailAndPassword } = useContext(AuthContext);
   const [selectedRole, setSelectedRole] = useState("");
@@ -21,7 +19,7 @@ const SignUp = () => {
     setLoading(true);
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       if (user) {
-        navigate("/signin");
+        navigate("/");
       }
       setLoading(false);
     });
@@ -69,8 +67,11 @@ const SignUp = () => {
         values.password,
         values.confirmPassword
       );
-      setShowPopup(true);
-      navigate("/popup");
+      if (values.role === "company") {
+        navigate("/signin");
+      } else {
+        navigate("/signin");
+      }
     } catch (error) {
       console.error("Error registering user:", error);
       alert(error.message || "Error registering user. Please try again.");
@@ -83,8 +84,8 @@ const SignUp = () => {
     validationSchema,
     onSubmit: handleRegister,
   });
+
   const handleCheckboxChange = () => {
-    setShowPopup(true);
     formik.setFieldValue("termsAccepted", !formik.values.termsAccepted);
     const checkbox = document.getElementById("termsCheckbox");
     if (!checkbox.checked) {
@@ -93,32 +94,12 @@ const SignUp = () => {
     }
   };
 
-  const handleContinue = () => {
-    if (selectedRole === "employee") {
-      console.log("Navigating to employee profile...");
-      navigate("/employeeprofile");
-    } else if (selectedRole === "company") {
-      console.log("Navigating to company profile...");
-      navigate("/companyprofile");
-    } else {
-      console.log("Invalid role selected:", selectedRole);
-    }
-    setShowPopup(false);
-  };
-
-  const handleSkip = () => {
-    setShowPopup(false);
-  };
-
   const handleRoleChange = (formik) => {
     const role = formik.values.role;
     console.log("Selected Role:", role); // Log the selected role to check
     setSelectedRole(role); // Update selectedRole state with the selected role
     console.log("Updated selectedRole:", role); // Log the updated selected role
   };
-  
-  
-  
 
   const [error, setError] = useState(null);
 
@@ -135,8 +116,8 @@ const SignUp = () => {
         <div className={styles.space}></div>
 
         {loading ? (
-          <div className={styles.container}>
-            <ClipLoader color="#367fd6" size={150} speedMultiplier={0.5} />
+          <div className={styles.loading}>
+            <ClipLoader color="#367fd6" size={50} speedMultiplier={0.5} />
           </div>
         ) : (
           <div>
@@ -201,17 +182,13 @@ const SignUp = () => {
                     You want to signup as :
                   </label>
                   <select
-  className={styles.selecttype}
-  name="role"
-  value={formik.values.role}
-  onChange={handleRoleChange} // Pass the handleRoleChange function here
-  required
-  {...formik.getFieldProps("role")}
->
-       
-
-
-
+                    className={styles.selecttype}
+                    name="role"
+                    value={formik.values.role}
+                    onChange={handleRoleChange} // Pass the handleRoleChange function here
+                    required
+                    {...formik.getFieldProps("role")}
+                  >
                     <option value="no">Select a type</option>
                     <option value="employee">Employee</option>
                     <option value="company">Company</option>
@@ -306,14 +283,6 @@ const SignUp = () => {
                       {error}
                     </span>
                   )}
-                    {showPopup && (
-  <FirstPopup 
-    onContinue={handleContinue}
-    onSkip={handleSkip}
-    selectedRole={selectedRole} // Pass the selectedRole prop here
-  />
-)}
-
                   <br />
                   <button type="submit" className={styles.signinbutton}>
                     Sign up

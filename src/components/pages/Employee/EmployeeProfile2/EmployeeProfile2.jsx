@@ -12,7 +12,7 @@ import ClipLoader from "react-spinners/ClipLoader";
 const EmployeeProfile2 = () => {
   const { id } = useParams(); 
   const [employeeData, setEmployeeData] = useState(null);
-  const [selectedTab, setSelectedTab] = useState("details");
+  const [selectedTab, setSelectedTab] = useState("posts");
   const [loading, setLoading] = useState(true);
   const [userExists, setUserExists] = useState(true); 
 

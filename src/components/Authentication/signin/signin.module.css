@@ -6,7 +6,11 @@
   background-color: #f5f5f5; /* Light background */
   margin-top: 0px;
 }
-
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .signinBackgroundShape {
 position: fixed;
 top: 0;

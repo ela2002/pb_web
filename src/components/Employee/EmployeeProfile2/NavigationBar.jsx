@@ -9,14 +9,14 @@ const NavigationBar = ({ selectedTab, setSelectedTab }) => {
 
   return (
     <div className={styles.navbar}>
-      <button
+    {/*  <button
         className={`${styles.navButton} ${
           selectedTab === "details" ? styles.active : ""
         }`}
         onClick={() => handleTabChange("details")}
       >
         Details
-      </button>
+      </button>*/} 
       <button
         className={`${styles.navButton} ${
           selectedTab === "posts" ? styles.active : ""
@@ -26,22 +26,6 @@ const NavigationBar = ({ selectedTab, setSelectedTab }) => {
         Posts
       </button>
       
-      <button
-        className={`${styles.navButton} ${
-          selectedTab === "liked" ? styles.active : ""
-        }`}
-        onClick={() => handleTabChange("liked")}
-      >
-        Likes
-      </button>
-      <button
-        className={`${styles.navButton} ${
-          selectedTab === "saved" ? styles.active : ""
-        }`}
-        onClick={() => handleTabChange("saved")}
-      >
-        Saves
-      </button>
      
     </div>
   );

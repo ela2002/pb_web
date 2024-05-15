@@ -5,7 +5,7 @@ import TrendTrack from "../../../Employee/Insightzone/TrendTrack";
 import styles from "./Insightzone.module.css";
 import AddButton from "../../../Employee/Insightzone/AddButton";
 import AddPostCard from "../../../Employee/Insightzone/AddPostCard";
-import ClipLoader from "react-spinners/ClipLoader"; // Import the loading spinner
+import ClipLoader from "react-spinners/ClipLoader";
 
 const Insightzone = () => {
   const [showAddPostCard, setShowAddPostCard] = useState(false);
@@ -57,8 +57,8 @@ const Insightzone = () => {
           <AddButton onClick={toggleAddPostCard} />
         </div>
         <div className={styles.middle_section}>
-          {loading ? ( // Render loading spinner while fetching data
-            <div className={styles.loader}>
+          {loading ? ( 
+            <div className={styles.loading}>
               <ClipLoader color="#B69FEB" size={50} speedMultiplier={0.5} />
             </div>
           ) : (

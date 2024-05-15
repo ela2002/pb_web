@@ -72,7 +72,11 @@
   border-radius: 10px;
   resize: none;
 }
-
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .imageUploadLabel {
   display: flex;
   align-items: center;
