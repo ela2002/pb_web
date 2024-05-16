@@ -19,7 +19,7 @@ Powerback Web is a web application built with React.js that provides employees w
 
 ## Installation
 
-1. Clone the repository:
+1. Clone the repository: https://github.com/ela2002/pb_web.git
 2. Install dependencies: npm install
 3. Start the development server: npm start
 4. Open your web browser and navigate to `http://localhost:3000` to view the application.
