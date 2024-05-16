@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   min-height: 30vh;
-  background-color: #f5f5f5; /* Light background */
+  background-color: #f5f5f5;
   margin-top: 0px;
 }
 .loading {
@@ -18,43 +18,43 @@
   width: 100%;
   height: 100%;
   z-index: -5;
-  background: radial-gradient(circle, rgba(139, 138, 138, 0.5) 30%, #e0e0e0 70%); /* Adjust gradient for light mode */
+  background: radial-gradient(circle, rgba(139, 138, 138, 0.5) 30%, #e0e0e0 70%); 
 }
 
 .error {
-  color: #ff3333; /* Darken error color */
+  color: #ff3333;
   font-weight: 700;
 }
 
 .textRed500 {
-  color: #ff3333; /* Darken text color */
+  color: #ff3333;
 }
 
 .glassEffect {
-  background: #ffffff; /* Light background */
+  background: #ffffff; 
   border-radius: 10px;
   padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Adjust shadow */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
   text-align: center;
   width: 470px;
   max-width: 500px;
-  color: #333333; /* Darken text color */
+  color: #333333; 
   margin: 5px;
 }
 
 @media (max-width: 768px) {
   .glassEffect {
-    width: 90%; /* Adjust width for smaller screens */
+    width: 90%; 
   }
 }
 
   .p {
-    color: #666666; /* Darken text color */
+    color: #666666; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   
   .h3 {
-    color: #8172E8; /* Darken text color */
+    color: #8172E8; 
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -62,7 +62,7 @@
   .labels {
     display: block;
     margin-bottom: 10px;
-    color: #666666; /* Darken text color */
+    color: #666666; 
     font-family: Arial, Helvetica, sans-serif;
   }
   
@@ -70,24 +70,24 @@
     width: 330px;
     height: 50px;
     border-radius: 0px;
-    background-color: #f0f0f0; /* Light background */
+    background-color: #f0f0f0; 
     border: none;
     font-size: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: #333333; /* Darken text color */
+    color: #333333; 
     padding-left: 10px;
   }
 
   .google {
-    color: #666666; /* Darken text color */
+    color: #666666; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 18px;
     width: 340px;
   }
   
   .signinbutton {
-    background-color: #7D55C7; /* Keep button color */
-    color: #ffffff; /* Lighten text color */
+    background-color: #7D55C7; 
+    color: #ffffff; 
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -95,17 +95,17 @@
   }
   
   .h5 {
-    color: #666666; /* Darken text color */
+    color: #666666; 
     font-family: Arial, Helvetica, sans-serif, monospace;
     font-size: 14px;
   }
   
   .signinbutton:hover {
-    background-color: #5a3f99; /* Darken button hover color */
+    background-color: #5a3f99; 
   }
   
   .button:hover {
-    background-color: #5a3f99; /* Darken button hover color */
+    background-color: #5a3f99; 
   }
   
   .check {
@@ -117,8 +117,8 @@
   .button, .signinbutton {
     width: 340px;
     height: 50px;
-    color: #ffffff; /* Lighten text color */
-    background-color: #7D55C7; /* Keep button color */
+    color: #ffffff; 
+    background-color: #7D55C7;
     font-size: 16px;
   }
   

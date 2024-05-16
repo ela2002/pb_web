@@ -1,7 +1,7 @@
 // Navbar.js
 import React, { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../../AppContext/AppContext";
-import { Link, useNavigate } from "react-router-dom"; 
+import { Link, useLocation } from "react-router-dom"; 
 import { firestore, auth } from "../../../firebase/firebase";
 import { getDocs, query, collection, where, doc, updateDoc } from "firebase/firestore"; // Updated imports for Firestore functions
 import {
@@ -20,7 +20,7 @@ const Navbar = () => {
   const { signOutUser, user, userData } = useContext(AuthContext);
   const [displayName, setDisplayName] = useState("");
   const [showLinks, setShowLinks] = useState(false); // State for toggling links
-
+  const location = useLocation(); 
   const [companyData, setCompanyData] = useState(null);
 
   useEffect(() => {
@@ -48,6 +48,9 @@ const Navbar = () => {
       authStateChanged(); // Call the unsubscribe function
     };
   }, []);
+  const isActive = (path) => {
+    return location.pathname === path;
+  };
 
   return (
     <nav className={styles.navbar}>
@@ -67,14 +70,13 @@ const Navbar = () => {
       {/* Render links conditionally based on showLinks state */}
       <ul className={`${styles.navLinks} ${showLinks ? styles.show : ''}`}>
         <li>
-          <Link to="/dashboard">Dashboard </Link>
-        </li>
-       
-        <li>
-          <Link to="/job-offers">Jobs Offers</Link>
+          <Link to="/dashboard" className={isActive("/dashboard") ? "active" : ""}>Dashboard</Link>
         </li>
         <li>
-          <Link to="/employees">Employees</Link>
+          <Link to="/job-offers" className={isActive("/job-offers") ? "active" : ""}>Jobs Offers</Link>
+        </li>
+        <li>
+          <Link to="/employees" className={isActive("/employees") ? "active" : ""}>Employees</Link>
         </li>
       </ul>
       {/* Render other icons */}

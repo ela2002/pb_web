@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { firestore, auth } from "../../../firebase/firebase";
 import styles from "./AverageInteractionsChart.module.css";
-import { MdThumbUp } from "react-icons/md"; // Import the icon from the Material-UI library
+import { MdThumbUp } from "react-icons/md"; 
 
 const AverageInteractionsChart = () => {
   const [averageInteractions, setAverageInteractions] = useState(0);
@@ -24,7 +24,7 @@ const AverageInteractionsChart = () => {
         } catch (error) {
           console.error("Error fetching company data:", error);
         } finally {
-          setLoadingCompany(false); // Set loading state to false after fetching company data
+          setLoadingCompany(false); 
         }
       } else {
         setCompanyData(null);
@@ -33,7 +33,7 @@ const AverageInteractionsChart = () => {
     });
   
     return () => {
-      authStateChanged(); // Call the unsubscribe function
+      authStateChanged(); 
     };
   }, []);
 
@@ -48,16 +48,14 @@ const AverageInteractionsChart = () => {
           const querySnapshot = await getDocs(reviewsCollection);
           const reviewsData = querySnapshot.docs.map((doc) => doc.data());
           
-          // Calculate total number of likes and total number of reviews
           let totalLikes = 0;
           let totalReviews = reviewsData.length;
 
           reviewsData.forEach((review) => {
-            totalLikes += review.likes || 0; // Extract likes per review
+            totalLikes += review.likes || 0; 
           });
 
-          // Calculate average interactions (likes per review) as a percentage
-          const average = totalReviews !== 0 ? (totalLikes / (totalReviews * 5)) * 100 : 0; // Assuming each review can have a maximum of 5 likes
+          const average = totalReviews !== 0 ? (totalLikes / (totalReviews * 5)) * 100 : 0; 
           setAverageInteractions(average);
         } catch (error) {
           console.error("Error fetching reviews from Firestore:", error);

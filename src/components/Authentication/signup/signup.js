@@ -96,17 +96,15 @@ const SignUp = () => {
 
   const handleRoleChange = (formik) => {
     const role = formik.values.role;
-    console.log("Selected Role:", role); // Log the selected role to check
-    setSelectedRole(role); // Update selectedRole state with the selected role
-    console.log("Updated selectedRole:", role); // Log the updated selected role
+    console.log("Selected Role:", role);
+    setSelectedRole(role);
+    console.log("Updated selectedRole:", role);
   };
 
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    // Check if all input fields are filled out
     const isFormValid = Object.values(formik.values).every((value) => !!value);
-    // Update the state
     setAllFieldsFilled(isFormValid);
   }, [formik.values]);
 
@@ -123,11 +121,11 @@ const SignUp = () => {
           <div>
             <div className={styles.signinContainer}>
               <div className={styles.glassEffect}>
-                <h3 className={styles.h3}>Create your account </h3>
-                <p className={styles.p}>It’s totally free and super easy </p>
+                <h3 className={styles.h3}>Join Powerback Today!</h3>
+                <p className={styles.p}>Share your story. Shape the future.</p>
                 <div className={styles.part2}>
                   <h5 className={styles.h5}>
-                    _________ To, register with your email _________
+                    _________ Empower yourself and others. _________
                   </h5>
                 </div>
                 <form onSubmit={formik.handleSubmit}>
@@ -185,7 +183,7 @@ const SignUp = () => {
                     className={styles.selecttype}
                     name="role"
                     value={formik.values.role}
-                    onChange={handleRoleChange} // Pass the handleRoleChange function here
+                    onChange={handleRoleChange}
                     required
                     {...formik.getFieldProps("role")}
                   >

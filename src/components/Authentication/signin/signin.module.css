@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f5f5f5; /* Light background */
+  background-color: #f5f5f5; 
   margin-top: 0px;
 }
 .loading {
@@ -14,25 +14,25 @@
 .signinBackgroundShape {
 position: fixed;
 top: 0;
-left: 80px; /* Fixed typo: added 'px' */
+left: 80px;
 width: 100%;
 height: 100%;
 z-index: -5;
-background: radial-gradient(circle, rgba(139, 138, 138, 0.5) 30%, #d4d4d4 70%); /* Adjusted for light mode */
+background: radial-gradient(circle, rgba(139, 138, 138, 0.5) 30%, #d4d4d4 70%); 
 }
 
 .glassEffect {
-background: #ffffff; /* Light background */
+background: #ffffff; 
 border-radius: 10px;
 padding: 20px;
 box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 text-align: center;
 width: 470px;
-color: #333333; /* Darkened text color */
+color: #333333; 
 }
 
 .p {
-color: #666666; /* Darkened text color */
+color: #666666; 
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -45,7 +45,7 @@ font-family: Arial, Helvetica, sans-serif;
 .labels {
 display: block;
 margin-bottom: 10px;
-color: #666666; /* Darkened text color */
+color: #666666; 
 font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -53,24 +53,24 @@ font-family: Arial, Helvetica, sans-serif;
 width: 330px;
 height: 50px;
 border-radius: 0px;
-background-color: #f0f0f0; /* Light background */
+background-color: #f0f0f0; 
 border: none;
 font-size: 15px;
 font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-color: #333333; /* Darkened text color */
+color: #333333; 
 padding-left: 10px;
 }
 
 .google {
-color: #666666; /* Darkened text color */
+color: #666666; 
 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 font-size: 18px;
 width: 340px;
 }
 
 .signinbutton {
-background-color: #f0f0f0; /* Light background */
-color: #333333; /* Darkened text color */
+background-color: #f0f0f0; 
+color: #333333; 
 padding: 10px;
 border: none;
 border-radius: 5px;
@@ -80,19 +80,19 @@ cursor: pointer;
 .button {
 width: 340px;
 height: 50px;
-color: #ffffff; /* Light text color */
+color: #ffffff; 
 background-color: #7D55C7;
 font-size: 16px;
 }
 
 .h5 {
-color: #666666; /* Darkened text color */
+color: #666666; 
 font-family: Arial, Helvetica, sans-serif, monospace;
 font-size: 14px;
 }
 
 .signinbutton:hover {
-background-color: #c3c3c3; /* Lighten button hover color */
+background-color: #c3c3c3; 
 }
 
 .check {
@@ -102,14 +102,14 @@ margin-top: 20px;
 }
 
 .error {
-color: #ff3333; /* Darkened error color */
+color: #ff3333; 
 font-weight: 700;
 }
 
 .signinbutton {
 width: 340px;
 height: 50px;
-color: #ffffff; /* Light text color */
+color: #ffffff; 
 background-color: #7D55C7;
 font-family: Arial, Helvetica, sans-serif;
 font-weight: bold;

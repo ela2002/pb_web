@@ -68,10 +68,9 @@
     align-items: center; 
   }
   
-  .navLinks li a:hover {
+  .navLinks li a:hover, .navLinks li a.active {
     background-color: #8172E8; 
     color: white;
-   
   }
   
   .navLinks {

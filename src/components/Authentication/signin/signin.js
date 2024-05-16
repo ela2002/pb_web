@@ -77,13 +77,11 @@ const SignIn = () => {
         <div className={styles.space}></div>
         <div className={styles.signinContainer}>
           <div className={styles.glassEffect}>
-            <h3 className={styles.h3}>Sign in to your account</h3>
-            <p className={styles.p}>
-              Login to your account for a faster Checkout
-            </p>
+            <h3 className={styles.h3}>Welcome Back!</h3>
+            <p className={styles.p}>Let’s make workplaces better together.</p>
             <div className={styles.part2}>
               <h5 className={styles.h5}>
-                _________ And, Sign in with your email _________
+                _________ Your reviews, your impact. _________
               </h5>
             </div>
             <form onSubmit={formik.handleSubmit}>
