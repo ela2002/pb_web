@@ -12,9 +12,7 @@ Powerback Web is a web application built with React.js that provides employees w
 - **Review Submission**: Employees can submit detailed reviews about their employers.
 - **Search and Filtering**: Advanced search functionality to find companies based on various criteria.
 - **User Profiles**: Personalized user profiles with options to follow companies and colleagues.
-- **Notification System**: Real-time notifications for new reviews, comments, and updates.
 - **Analytics Dashboard**: Powerful analytics and reporting tools for companies to track review trends.
-- **Responsive Design**: Fully responsive layout, ensuring optimal user experience across devices.
 - **Real-Time Chat**: Integrated chat feature for users to communicate in real-time with colleagues.
 - **Job Application**: Capability for users to apply for job opportunities posted by companies.
 - **Post Creation**: Users can create and share posts within the platform.
